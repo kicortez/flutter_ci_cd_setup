@@ -6,6 +6,8 @@ set -e
 # debug log
 set -x
 
+echo "Start post clone script"
+
 cd ..
 git clone -b stable https://github.com/flutter/flutter.git
 export PATH=`pwd`/flutter/bin:$PATH
